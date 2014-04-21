@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PostTriagePhysicianActivity" >
+
+    <TextView
+        android:id="@+id/posttriage_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/out_of_hospital"
+        android:textColor="@color/pink" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/posttriage_patient"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/posttriage_patient"
+        android:layout_marginTop="29dp"
+        android:onClick="updatePrescription"
+        android:text="@string/updatePrescription"
+        android:textColor="@color/medium_blue" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/button1"
+        android:text="@string/displayPrescription"
+        android:textColor="@color/medium_blue" 
+        android:onClick="displayPrescription"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:textColor="@color/medium_blue"
+        android:text="@string/displayVitalRecord"
+        android:onClick="displayVitalRecord"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="18dp"
+        android:background="@color/medium_blue"
+        android:onClick="returnToMainMenu"
+        android:text="@string/return_to_main_menu"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
