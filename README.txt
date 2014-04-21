@@ -18,9 +18,6 @@ SETUP
 Before running Triage for the first time, you must push the passwords.txt file 
 found in PIII onto your Android virtual device using adb.
 
-To open the project in Eclipse, set the program workspace to 
-group_0716/PIII/Triage. All the necessary files are located here.
-
 --------------------------
 GENERAL USAGE
 --------------------------
