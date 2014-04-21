@@ -16,7 +16,7 @@ SETUP
 --------------------------
 
 Before running Triage for the first time, you must push the passwords.txt file 
-found in PIII onto your Android virtual device using adb.
+onto your Android virtual device using adb.
 
 --------------------------
 GENERAL USAGE
